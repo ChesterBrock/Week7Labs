@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lab7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="leftTextBox" HorizontalAlignment="Left" Height="23" Margin="40,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="rightTextBox" HorizontalAlignment="Left" Height="23" Margin="366,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="ListBox" HorizontalAlignment="Left" Height="112" Margin="241,81,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.469,0.505">
+            <ListBoxItem Content="+"/>
+            <ListBoxItem Content="-"/>
+            <ListBoxItem Content="*"/>
+            <ListBoxItem Content="/"/>
+            <ListBoxItem Content="%"/>
+        </ListBox>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="268,294,0,0" VerticalAlignment="Top" Width="218" Height="52" Click="Button_Click"/>
+        <Label Content="=" HorizontalAlignment="Left" FontSize="15" Margin="539,81,0,0" VerticalAlignment="Top" Height="44" Width="25"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Height="23" Margin="611,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
+
+    </Grid>
+</Window>
